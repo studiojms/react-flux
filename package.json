@@ -1,0 +1,30 @@
+{
+  "name": "react-flux",
+  "version": "1.0.0",
+  "description": "Comparison of some flux implementations using react",
+  "repository": "git@github.com:studiojms/react-flux.git",
+  "author": "studiojms",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "flux": "^3.1.3",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.1.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2"
+  }
+}
