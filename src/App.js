@@ -5,7 +5,7 @@ import Home from './Home';
 import Template from './components/Template';
 import FluxPage from './flux-manual/FluxPage';
 // import ReduxPage from './redux/ReduxPage';
-// import MobxPage from './mobx/MobxPage';
+import MobxPage from './mobx/MobxPage';
 
 const App = () => (
   <Router>
@@ -15,7 +15,9 @@ const App = () => (
           <FluxPage />
         </Route>
         <Route path="/redux">{/* <ReduxPage /> */}</Route>
-        <Route path="/mobx">{/* <MobxPage /> */}</Route>
+        <Route path="/mobx">
+          <MobxPage />
+        </Route>
         <Route path="/">
           <Home />
         </Route>
