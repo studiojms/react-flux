@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import Template from './components/Template';
 import FluxPage from './flux-manual/FluxPage';
-// import ReduxPage from './redux/ReduxPage';
 import MobxPage from './mobx/MobxPage';
+import ReduxPage from './redux/ReduxPage';
 
 const App = () => (
   <Router>
@@ -14,7 +14,9 @@ const App = () => (
         <Route path="/flux">
           <FluxPage />
         </Route>
-        <Route path="/redux">{/* <ReduxPage /> */}</Route>
+        <Route path="/redux">
+          <ReduxPage />
+        </Route>
         <Route path="/mobx">
           <MobxPage />
         </Route>
