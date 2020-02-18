@@ -21,6 +21,15 @@ function Template({ children }) {
             <Link to="/mobx">Mobx</Link>
           </li>
         </ul>
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <a href="https://github.com/studiojms/react-flux">
+              <button type="button" className="button is-primary">
+                Github
+              </button>
+            </a>
+          </div>
+        </div>
       </nav>
       <div className="section">{children}</div>
     </div>
