@@ -17,6 +17,10 @@ class FluxPage extends React.Component {
   }
 
   componentDidMount() {
+    this.setState({
+      currentText: ToDoFluxStore.getCurrentText(),
+      items: ToDoFluxStore.getItems(),
+    });
     ToDoFluxStore.addChangeListener(this.onChange);
   }
 
