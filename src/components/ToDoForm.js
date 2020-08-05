@@ -3,9 +3,11 @@ import React from 'react';
 function ToDoForm({ currentText, items, onTextChange, onAddClick, onClearClick }) {
   return (
     <form
-      onSubmit={e => {
+      onSubmit={(e) => {
         e.preventDefault();
-        onAddClick();
+        if (currentText?.length > 0) {
+          onAddClick();
+        }
       }}
     >
       <div className="field is-grouped">
@@ -15,7 +17,7 @@ function ToDoForm({ currentText, items, onTextChange, onAddClick, onClearClick }
             type="text"
             placeholder="Task Description"
             value={currentText}
-            onChange={e => onTextChange(e.target.value)}
+            onChange={(e) => onTextChange(e.target.value)}
           />
         </div>
         <div className="control">
